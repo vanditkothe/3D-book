@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to 3D Book Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="welcome.css"> <!-- Add this line to link the welcome.css file -->
+
+</head>
+<body>
+
+    <div class="welcome-container">
+        <h1>Welcome to the 3D Book Website</h1>
+        <button id="showBookBtn" class="showBookBtn">Check Book</button>
+
+    
+    
+    </div>
+    <script>
+        document.getElementById("showBookBtn").addEventListener("click", function() {
+            window.location.href = "index.html"; // Redirect to the flipbook page
+        });
+    </script>
+    
+    
+</body>
+</html>
+

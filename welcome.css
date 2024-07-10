@@ -1,0 +1,103 @@
+/* welcome.css */
+
+body {
+    /* background: linear-gradient(90deg, #d7eeff 50%, #f1daff 50%); */
+    background: url(https://media.giphy.com/media/3o6vXTpomeZEyxufGU/giphy.gif) ;
+    background-size: 900px;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+.welcome-container {
+    text-align: center;
+    background-color: rgba(20, 4, 24, 0.9);
+    
+    background: url(https://media.giphy.com/media/SXs8ksv1KzibiueuxS/giphy.gif) ;
+    background-position: center;
+    background-size: 500px;
+    /* background-size: 900px; */
+    /* background-position: 100pt; */
+
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(255, 136, 9, 0.905);
+}
+h1 {
+    font-family: "Copperplate", Times, serif;
+    font-size: 50px;
+    font-style:inherit;
+    font-weight: bold;
+    margin-bottom: 50px;
+    color: #ede5e5; 
+}
+
+
+.showBookBtn {
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline:#7a00ff;
+    color: #f9f5f5;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    font-size: larger;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-style: oblique ;
+}
+
+.showBookBtn:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.showBookBtn:active {
+    color: #000
+}
+
+.showBookBtn:active:after {
+    background: transparent;
+}
+
+.showBookBtn:hover:before {
+    opacity: 1;
+}
+
+.showBookBtn:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}

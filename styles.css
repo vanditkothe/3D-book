@@ -1,0 +1,287 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+body {
+    background: linear-gradient(90deg, #a8b97c 50%, #8f2963 50%);
+    background: url(https://media.giphy.com/media/l5JbspfwZ0yjHjlJ0K/giphy-downsized-large.gif ) ;
+    background-size:  500px;
+    background-position: center;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    align-items: center;
+  
+}
+/* {
+    background: linear-gradient(to right,#07a, #0aa);
+    background-size: 100%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.5em;
+    margin: 80px 4em 0;
+    color: #f5f5f5;
+  } */
+  h1 {
+    max-width: 49rem;
+    font-size: 3.5em;
+    line-height: 1em;
+    font-weight: 700;
+    margin: 0.25em auto;
+  }
+  h2 {
+    max-width: 49rem;
+    margin: 1.4em auto;
+  }
+  p {
+    line-height: 1.5em;
+    margin: 1.4em auto;
+    max-width: 49rem;
+    font-size: 1em;
+    font-weight: 300;
+  }
+  
+  /** Code for hover info **/
+  
+  dfn {
+    background: rgba(0,0,0,0.2);
+    border-bottom: dashed 1px rgba(0,0,0,0.8);
+    padding: 0 0.4em;
+    cursor: help;
+    font-style: normal;
+    position: relative;
+    
+  }
+  dfn::after {
+    content: attr(data-info);
+    display: inline;
+    position: absolute;
+    top: 22px; left: 0;
+    opacity: 0;
+    width: 230px;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 1.5em;
+    padding: 0.5em 0.8em;
+    background: rgba(0,0,0,0.8);
+    color: #fff;
+    pointer-events: none; /* This prevents the box from apearing when hovered. */
+    transition: opacity 250ms, top 250ms;
+  }
+  dfn::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 12px; left: 20px;
+    opacity: 0;
+    width: 0; height: 0;
+    border: solid transparent 5px;
+    border-bottom-color: rgba(0,0,0,0.8);
+    transition: opacity 250ms, top 250ms;
+  }
+  dfn:hover {z-index: 2;} /* Keeps the info boxes on top of other elements */
+  dfn:hover::after,
+  dfn:hover::before {opacity: 1;}
+  dfn:hover::after {top: 30px;}
+  dfn:hover::before {top: 20px;}
+
+input {
+    display:inline;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.book {
+    display:flex;
+}
+
+#cover {
+    width: 550px;
+    height: 700px;
+}
+
+.flip-book {
+    width: 550px;
+    height: 700px;
+    position: relative;
+    perspective: 1500px;
+}
+
+.flip {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform-origin: left;
+    transform-style: preserve-3d;
+    transform: rotateY(0deg);
+    transition: transform 0.6s ease, box-shadow 0.3s ease;
+    box-shadow: 0 5px 15px rgba(250, 248, 248, 0.5);
+    color: #161111;
+    transform: rotateY(15deg);
+    
+}
+.flip1 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform-origin: left;
+    transform-style: preserve-3d;
+    transform: rotateY(0deg);
+    transition: transform 0.6s ease, box-shadow 0.3s ease;
+    box-shadow: 0 5px 15px rgba(250, 248, 248, 0.5);
+    color: #151414;
+    transform: rotateY(15deg);
+    
+}
+
+.flip1 h1{
+    font-size: 65px;
+    line-height :100px; 
+    margin-left: 35px;
+    font:bolder;
+    color: transparent ;
+    -webkit-text-stroke: 1px #eaeaea;
+    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2-2UNTrVgw0PJpJ22rgwt6z7KjxgyC3rEqA&usqp=CAU);
+    -webkit-background-clip: text ;
+    background-position: 0 0;
+    animation: back 1s linear infinite;
+
+font-family: "Copperplate" , Times, serif }
+@keyframes back {
+     100%{
+        background-position: 2000px 0;
+     }
+}
+.flip1 h3{
+    font-size: 50px;
+    line-height :1000px;
+    font:bolder;
+    color: transparent ;
+    -webkit-text-stroke: 1px #eaeaea;
+    background: url(https://img.freepik.com/premium-photo/vector-abstract-neon-lights-background-design_812426-15538.jpg);
+    -webkit-background-clip: text ;
+    background-position: 0 0;
+    animation: back 5s linear infinite;
+
+font-family: "Copperplate" , Times, serif }
+@keyframes back {
+     100%{
+        background-position: 2000px 0;
+     }
+    
+}
+.flip h2{
+    font-size: 60PX;
+    line-height: 70px;
+    margin-top: 20px;
+    margin-left: 30px
+
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.front {
+    
+    
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #90dfe3;
+    box-sizing: border-box;
+    padding: 0 13px;
+    box-shadow: inset 20px 0 50px r;
+    
+}
+
+.back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+    background-color: #0e0e0e;
+}
+
+.next-btn, .back-btn {
+    position: absolute;
+    font-size: large;
+    font-weight: bolder;
+    font-style:italic;
+    bottom: 13px;
+    right: 13px;
+    cursor: pointer;
+    padding: 5px 10px;
+    background-color: #0f60da;
+    color: #d8d2d2;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+     
+    
+}
+
+.next-btn:hover, .back-btn:hover {
+    
+    background-color: #3919eb;
+    box-shadow: 0 0 5px rgb(50, 60, 80),0 0 10px rgb(223, 170, 230),0 0 15px rgb(219, 171, 246), 0 0 30px rgb(225, 166, 248) , 0 0 60px rgb(230, 192, 253);
+    
+    
+}
+
+
+#cover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+
+
+#p1 {
+    z-index: 3;
+}
+#p2 {
+    z-index: 2;
+}
+#p3 {
+    z-index: 1;
+}
+
+#c1:checked ~ .flip-book #p1 {
+    transform: rotateY(-180deg);
+    z-index: 1;
+}
+#c2:checked ~ .flip-book #p2 {
+    transform: rotateY(-180deg);
+    z-index: 2;
+}
+#c3:checked ~ .flip-book #p3 {
+    transform: rotateY(-180deg);
+    z-index: 3;
+}
+ 

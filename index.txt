@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Only 3D Flip Book Animation Example</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+    .card {
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
+        width: 40%;
+      }
+      
+      .card:hover {
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+      }
+      
+      .container {
+        padding: 2px 16px;
+      }
+      .rating{
+        display: flex;
+        flex-direction: column;
+      }
+      </style>
+</head>
+<body>
+
+    <div class="book">
+        <input type="checkbox" id="c1">
+        <input type="checkbox" id="c2">
+        <input type="checkbox" id="c3">
+        <div id="cover">
+             <img src="/video1.mp4" > 
+            
+        </div>
+        <div class="flip-book">
+            <div class="flip" id="p1">
+                <div class="back">
+                    <img src="/video2.mp4">
+                    <label  for="c1" class="back-btn">PREV</label>
+                </div>
+                <div class="front">
+                    
+                    <h2>
+                        <dfn data-info="स्वच्छ भारत अभियान भारत के इतिहास में सबसे लोकप्रिय और महत्वपूर्ण मिशनों में से एक है। यह अभियान प्रधान मंत्री नरेंद्र मोदी द्वारा शुरू किया गया था, और महात्मा गांधी के स्वच्छ देश के दृष्टिकोण का सम्मान करने के लिए 2 अक्टूबर 2014 को शुरू किया गया था।
+
+                        उपलब्धियाँ: अपनी स्थापना के बाद से, स्वच्छ भारत अभियान ने कई मील के पत्थर हासिल किए हैं, जिनमें लाखों शौचालयों का निर्माण, स्वच्छता कवरेज में वृद्धि और सार्वजनिक स्थानों पर स्वच्छता में सुधार शामिल है। इससे कई क्षेत्रों में खुले में शौच में उल्लेखनीय कमी आई है।
+                        
+                        चुनौतियाँ: अपनी सफलताओं के बावजूद, स्वच्छ भारत को व्यवहार परिवर्तन को बनाए रखने, बुनियादी ढांचे के उचित रखरखाव को सुनिश्चित करने और कमजोर और हाशिए पर रहने वाले समुदायों की स्वच्छता आवश्यकताओं को संबोधित करने जैसी चुनौतियों का सामना करना पड़ता है।
+                        
+                        निष्कर्ष: स्वच्छ भारत अभियान बेहतर स्वच्छता और साफ-सफाई प्राप्त करने की दिशा में भारत की यात्रा में एक महत्वपूर्ण पहल है। यह न केवल सार्वजनिक स्वास्थ्य संबंधी चिंताओं को संबोधित करता है बल्कि सभी नागरिकों के लिए एक स्वच्छ और अधिक स्वच्छ वातावरण को भी बढ़ावा देता है। यह मिशन स्वच्छ भारत या स्वच्छ भारत बनाने के लिए सरकार, नागरिकों और विभिन्न संगठनों को शामिल करने वाला एक सामूहिक प्रयास है।">Swachh bharat</dfn>
+                        </h2>
+                    
+                    <p>
+                        <h4>Swachh Bharat Abhiyan is one of the most popular and significant missions in the History of India. This campaign was introduced by the Prime Minister, Narendra Modi, and was launched on 2nd October 2014 to honour Mahatma Gandhi’s vision of a Clean country. </h4>
+                    <h4>Achievements:
+                        Since its inception, Swachh Bharat Abhiyan has achieved several milestones, including the construction of millions of toilets, increased sanitation coverage, and improved cleanliness in public spaces. It has also led to a significant reduction in open defecation in many areas.
+                        
+                        </h4>
+                    <h4>Challenges:
+                        Despite its successes, Swachh Bharat faces challenges such as sustaining behavioral change, ensuring proper maintenance of infrastructure, and addressing the sanitation needs of vulnerable and marginalized communities.
+                        
+                        </h4>
+                    <h4>Conclusion:
+                        Swachh Bharat Abhiyan is a critical initiative in India's journey toward achieving better sanitation and cleanliness. It not only addresses public health concerns but also promotes a cleaner and more hygienic environment for all citizens. The mission is a collective effort involving the government, citizens, and various organizations to create a Swachh Bharat, or Clean India.</h4></p>
+                    
+                    <label for="c1" class="next-btn">NEXT</label>
+                </div>
+            </div>
+
+            <div class="flip" id="p2">
+                <div class="back">
+                    <img src="/video3.mp4" >
+                    <label for="c2" class="back-btn">PREV</label>
+                </div>
+                <div class="front">
+                    <h2>
+                        <dfn data-info="सितंबर 2021 में मेरे अंतिम ज्ञान अद्यतन के अनुसार, चंद्रयान -3 की भारतीय अंतरिक्ष अनुसंधान संगठन (इसरो) द्वारा आधिकारिक तौर पर घोषणा या लॉन्च नहीं किया गया था। हालाँकि, मैं चंद्रयान मिशन के बारे में कुछ सामान्य जानकारी प्रदान कर सकता हूँ:
+
+                        चंद्रयान भारत का चंद्र अन्वेषण कार्यक्रम है, जिसमें चंद्रमा की खोज के उद्देश्य से मिशनों की एक श्रृंखला शामिल है। 2008 में लॉन्च किया गया चंद्रयान-1, भारत का पहला चंद्र मिशन था और देश के अंतरिक्ष अन्वेषण प्रयासों में एक महत्वपूर्ण मील का पत्थर साबित हुआ। इसने अन्य उपलब्धियों के अलावा, चंद्रमा की सतह पर पानी के अणुओं की खोज की।
+                        
+                        जुलाई 2019 में लॉन्च किया गया चंद्रयान-2 एक अधिक महत्वाकांक्षी मिशन था जिसमें एक ऑर्बिटर, एक लैंडर (विक्रम) और एक रोवर (प्रज्ञान) शामिल था। जबकि ऑर्बिटर कक्षा से चंद्रमा का अध्ययन करना जारी रखता है, विक्रम लैंडर को एक कठिन लैंडिंग का अनुभव हुआ और अपने वंश के दौरान संचार खो गया, और प्रज्ञान रोवर तैनात होने में असमर्थ था। इस झटके के बावजूद, चंद्रयान-2 ऑर्बिटर चंद्रमा की कक्षा से बहुमूल्य डेटा और छवियां भेज रहा है।
+                        
+                        यदि मेरे पिछले अपडेट के बाद से चंद्रयान-3 की आधिकारिक तौर पर घोषणा की गई है और लॉन्च किया गया है, तो मैं मिशन के उद्देश्यों, प्रगति और परिणामों के बारे में विशिष्ट विवरण के लिए इसरो या अन्य विश्वसनीय स्रोतों से नवीनतम समाचार और अपडेट की जांच करने की सलाह दूंगा।">
+                        chandrayaan 3</dfn></h2>
+                    <p><h4>As of my last knowledge update in September 2021, Chandrayaan-3 had not been officially announced or launched by the Indian Space Research Organisation (ISRO). However, I can provide some general information about Chandrayaan missions:</h4>
+
+                        <h4>Chandrayaan is India's lunar exploration program, consisting of a series of missions aimed at exploring the Moon. Chandrayaan-1, launched in 2008, was India's first lunar mission and marked a significant milestone in the country's space exploration efforts. It discovered water molecules on the lunar surface, among other achievements.</h4>
+                        
+                        <h4>Chandrayaan-2, launched in July 2019, was a more ambitious mission that included an orbiter, a lander (Vikram), and a rover (Pragyan). While the orbiter continues to study the Moon from orbit, the Vikram lander experienced a hard landing and lost communication during its descent, and the Pragyan rover was unable to deploy. Despite this setback, the Chandrayaan-2 orbiter has been sending valuable data and images from lunar orbit.</h4>
+                        
+                        <h4> If Chandrayaan-3 has been officially announced and launched since my last update, I would recommend checking the latest news and updates from ISRO or other reliable sources for specific details about the mission's objectives, progress, and outcomes.</h4></p>
+                    <label for="c2" class="next-btn">NEXT</label>
+                </div>
+            </div>
+            
+            <div class="flip1" id="p3">
+                <div class="back">
+                    <h1>JUNK CODERS </h1>
+                    <h3>THANK YOU</h3>
+                    
+                    <label for="c3" class="back-btn">PREV</label>
+                </div>
+                
+                <div class="front">
+                    <h2><dfn data-info="प्रदूषण प्राकृतिक पर्यावरण में हानिकारक संदूषकों का प्रवेश है, जिससे पारिस्थितिक तंत्र, मानव स्वास्थ्य और जीवन की समग्र गुणवत्ता पर प्रतिकूल प्रभाव पड़ता है। प्रदूषण विभिन्न प्रकार के होते हैं, प्रत्येक के अपने कारण और परिणाम होते हैं:
+
+                        वायु प्रदूषण: यह तब होता है जब प्रदूषक, जैसे गैसें (जैसे, कार्बन मोनोऑक्साइड, सल्फर डाइऑक्साइड) और कण पदार्थ (जैसे, धूल, धुआं), वायुमंडल में छोड़े जाते हैं। वायु प्रदूषण औद्योगिक गतिविधियों, वाहन उत्सर्जन और जंगल की आग जैसे प्राकृतिक स्रोतों से हो सकता है। इससे श्वसन संबंधी बीमारियाँ, जलवायु परिवर्तन और वायु गुणवत्ता में कमी हो सकती है।
+                        
+                        जल प्रदूषण: जल प्रदूषण में रसायनों, सीवेज और भारी धातुओं जैसे पदार्थों द्वारा जल निकायों (जैसे, नदियाँ, झीलें, महासागर) का प्रदूषण शामिल है। यह जलीय पारिस्थितिक तंत्र को नुकसान पहुंचाता है, जलीय जीवन को खतरे में डालता है, और पानी को पीने और मनोरंजन के लिए असुरक्षित बना सकता है। ध्वनि प्रदूषण: ध्वनि प्रदूषण मानव गतिविधियों (जैसे, यातायात, निर्माण, औद्योगिक प्रक्रियाओं) द्वारा उत्पन्न अत्यधिक, अवांछित या विघटनकारी शोर है। यह तनाव, सुनने की समस्याएं पैदा कर सकता है और समग्र स्वास्थ्य पर नकारात्मक प्रभाव डाल सकता है।">
+                        Pollution</dfn></h1>
+                    <p><h4>Pollution is the introduction of harmful contaminants into the natural environment, leading to adverse effects on ecosystems, human health, and the overall quality of life. There are various types of pollution, each with its own set of causes and consequences:</h4>
+
+                        <h4>Air Pollution: This occurs when pollutants, such as gases (e.g., carbon monoxide, sulfur dioxide) and particulate matter (e.g., dust, smoke), are released into the atmosphere. Air pollution can result from industrial activities, vehicle emissions, and natural sources like wildfires. It can lead to respiratory diseases, climate change, and reduced air quality.</h4>
+                        
+                       <h4> Water Pollution: Water pollution involves the contamination of water bodies (e.g., rivers, lakes, oceans) by substances like chemicals, sewage, and heavy metals. It harms aquatic ecosystems, endangers aquatic life, and can make water unsafe for drinking and recreation.</h4>
+                    <h4>Noise Pollution: Noise pollution is the excessive, unwanted, or disruptive noise generated by human activities (e.g., traffic, construction, industrial processes). It can cause stress, hearing problems, and negatively impact overall well-being.</h4></p>
+                    <label for="c3" class="next-btn">NEXT</label>
+                </div>
+            </div>
+
+        </div>
+    </div>
+   <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-46156385-1', 'cssscript.com');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>
